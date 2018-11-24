@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
     font-family: 'Bebas Neue Bold';
     src: url('fonts/BebasNeueBold.eot');
@@ -11,6 +12,19 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Bebas Neue Bold';
+}
+
+b {
+    color: #d25b38;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .wrapper {
     width: 1600px;
     margin: 0 auto;
@@ -20,6 +34,9 @@
         padding-top: 57px;
         padding-left: 197px;
         box-sizing: border-box;
+        .navbar {
+            min-height: 100px;
+        }
         .logo {
             float: left;
         }
@@ -29,14 +46,50 @@
             margin-top: 43px;
         }
         nav li {
-            font-family: 'Bebas Neue Bold';
             font-size: 18px;
             display: inline-block;
             color: #fff;
         }
         nav a {
-            text-decoration: none;
+            display: block;
+            padding: 10px 13px;
+            margin-left: 8px;
+        }
+        nav a:hover {
+            border-bottom: 4px solid #fff;
+        }
+        .welcome {
+            clear: both;
             color: #fff;
+            width: 720px;
+            margin-top: 165px;
+            h2 {
+                font-size: 95.39px;
+                line-height: 92px;
+                margin-bottom: 35px;
+            }
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 25px;
+                font-style: italic;
+                margin-bottom: 50px;
+            }
+            a {
+                display: block;
+                float: left;
+                width: 180px;
+                height: 57px;
+                font-size: 20px;
+                line-height: 44px;
+                border: 5px solid #fff;
+                box-sizing: border-box;
+                text-align: center;
+                margin-right: 24px;
+            }
+            a:hover {
+                background-color: #d25b38;
+                border-color: #d25b38;
+            }
         }
     }
 }
