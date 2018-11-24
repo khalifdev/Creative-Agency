@@ -13,6 +13,8 @@
 }
 body {
   font-family: 'Bebas Neue Bold';
+  display: grid;
+  grid-template-rows: 897px minmax(794px, 1fr) 142px;
 }
 b {
   color: #d25b38;
@@ -21,59 +23,60 @@ a {
   text-decoration: none;
   color: #fff;
 }
-.wrapper {
-  width: 1600px;
-  margin: 0 auto;
+section {
+  padding-left: 197px;
+  box-sizing: border-box;
 }
-.wrapper header {
+header {
   height: 897px;
-  background-image: url(img/header_background.jpg);
+  background: url(img/header_background.jpg);
+  background-size: cover;
   padding-top: 57px;
   padding-left: 197px;
   box-sizing: border-box;
 }
-.wrapper header .navbar {
+header .navbar {
   min-height: 100px;
 }
-.wrapper header .logo {
+header .logo {
   float: left;
 }
-.wrapper header nav {
+header nav {
   float: right;
   margin-right: 200px;
   margin-top: 43px;
 }
-.wrapper header nav li {
+header nav li {
   font-size: 18px;
   display: inline-block;
   color: #fff;
 }
-.wrapper header nav a {
+header nav a {
   display: block;
   padding: 10px 13px;
   margin-left: 8px;
 }
-.wrapper header nav a:hover {
+header nav a:hover {
   border-bottom: 4px solid #fff;
 }
-.wrapper header .welcome {
+header .welcome {
   clear: both;
   color: #fff;
   width: 720px;
   margin-top: 165px;
 }
-.wrapper header .welcome h2 {
+header .welcome h2 {
   font-size: 95.39px;
   line-height: 92px;
   margin-bottom: 35px;
 }
-.wrapper header .welcome p {
+header .welcome p {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-style: italic;
   margin-bottom: 50px;
 }
-.wrapper header .welcome a {
+header .welcome a {
   display: block;
   float: left;
   width: 180px;
@@ -85,7 +88,87 @@ a {
   text-align: center;
   margin-right: 24px;
 }
-.wrapper header .welcome a:hover {
+header .welcome a:hover {
   background-color: #d25b38;
   border-color: #d25b38;
+}
+#about .about_text {
+  float: left;
+  width: 289px;
+  padding-top: 96px;
+  margin-right: 48px;
+}
+#about .about_text h2 {
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+#about .about_text p {
+  font-family: 'Open Sans', sans-serif;
+  color: #636363;
+  font-size: 16px;
+  line-height: 24px;
+}
+#about .wrk_hours {
+  float: left;
+  height: 770px;
+}
+#about .wrk_hours .hours_img {
+  width: 396px;
+  height: inherit;
+  background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
+  background-blend-mode: multiply;
+}
+#about .designer {
+  float: left;
+  margin-left: -328px;
+  margin-top: 65px;
+}
+#about .designer .designer_name {
+  float: left;
+}
+#about .designer .designer_name h3 {
+  color: #ffffff;
+  font-size: 39.52px;
+  line-height: 40px;
+  text-align: right;
+  padding-left: 80px;
+}
+#about .designer .designer_name h4 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: right;
+  margin-bottom: 40px;
+}
+#about .designer .designer_tag {
+  position: relative;
+  float: left;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin-left: 9px;
+  margin-top: -22px;
+  background: rgba(199, 40, 25, 0.45);
+}
+#about .designer .designer_tag .icon {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  top: 13px;
+  left: 13px;
+  border-radius: 50%;
+  background: #ffffff url(icons/Icon.png) no-repeat center;
+}
+#about .designer .designer_desc {
+  max-width: 363px;
+  float: left;
+  margin-left: 30px;
+  margin-top: -10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #636363;
+  font-size: 16px;
+  line-height: 24px;
 }
