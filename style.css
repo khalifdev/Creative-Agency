@@ -13,6 +13,8 @@
 }
 body {
   font-family: 'Bebas Neue Bold';
+  max-width: 1600px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: 897px minmax(794px, 1fr) 142px;
 }
@@ -82,7 +84,7 @@ header .welcome a {
   width: 180px;
   height: 57px;
   font-size: 20px;
-  line-height: 44px;
+  line-height: 46px;
   border: 5px solid #fff;
   box-sizing: border-box;
   text-align: center;
@@ -91,6 +93,9 @@ header .welcome a {
 header .welcome a:hover {
   background-color: #d25b38;
   border-color: #d25b38;
+}
+#about {
+  height: 770px;
 }
 #about .about_text {
   float: left;
@@ -111,8 +116,8 @@ header .welcome a:hover {
   line-height: 24px;
 }
 #about .wrk_hours {
+  height: inherit;
   float: left;
-  height: 770px;
 }
 #about .wrk_hours .hours_img {
   width: 396px;
@@ -169,6 +174,110 @@ header .welcome a:hover {
   margin-top: -10px;
   font-family: 'Open Sans', sans-serif;
   color: #636363;
+  font-size: 16px;
+  line-height: 24px;
+}
+#about::after {
+  content: '';
+  clear: both;
+  display: table-cell;
+}
+#creative_team_members {
+  height: 794px;
+  background-color: #f2f2f2;
+  padding: 82px 215px;
+  display: flex;
+  align-items: flex-end;
+}
+#creative_team_members h2 {
+  float: left;
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+  width: 257px;
+  margin-right: 85px;
+}
+#creative_team_members .members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#creative_team_members .members .member {
+  text-align: center;
+}
+#creative_team_members .members img {
+  margin-bottom: 57px;
+}
+#creative_team_members .members h3 {
+  color: #454443;
+  font-size: 39.52px;
+  line-height: 24px;
+}
+#creative_team_members .members h4 {
+  font-size: 25px;
+  line-height: 42px;
+}
+#creative_team_members .members p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 15px;
+}
+#find_us {
+  height: 794px;
+}
+#find_us .contacts {
+  float: left;
+  max-width: 23%;
+  height: 80%;
+  padding-top: 96px;
+  display: grid;
+  grid-template-rows: auto;
+}
+#find_us .contacts h2 {
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+}
+#find_us .contacts h3 {
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 24px;
+}
+#find_us .contacts address {
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+}
+#find_us .contacts a {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-size: 16px;
+  line-height: 24px;
+}
+#find_us .contacts p {
+  overflow: hidden;
+}
+#find_us .contacts img {
+  float: left;
+  margin-right: 21px;
+}
+#find_us .chair {
+  float: right;
+  height: inherit;
+  background: url(img/chair.jpg) -681px 0px;
+  width: 919px;
+}
+footer {
+  padding-top: 63px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
   font-size: 16px;
   line-height: 24px;
 }
