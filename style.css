@@ -12,11 +12,11 @@
   padding: 0;
 }
 body {
-  font-family: 'Bebas Neue Bold';
-  max-width: 1600px;
+  max-width: 1602px;
   margin: 0 auto;
+  font-family: 'Bebas Neue Bold';
   display: grid;
-  grid-template-rows: 897px minmax(794px, 1fr) 142px;
+  grid-template-rows: 897px minmax(794px, 1fr) 148px;
 }
 b {
   color: #d25b38;
@@ -26,14 +26,15 @@ a {
   color: #fff;
 }
 section {
+  margin: 0 auto;
   padding-left: 197px;
   box-sizing: border-box;
 }
 header {
-  height: 897px;
+  max-height: 897px;
   background: url(img/header_background.jpg);
   background-size: cover;
-  padding-top: 57px;
+  padding: 57px 197px 0;
   padding-left: 197px;
   box-sizing: border-box;
 }
@@ -45,7 +46,6 @@ header .logo {
 }
 header nav {
   float: right;
-  margin-right: 200px;
   margin-top: 43px;
 }
 header nav li {
@@ -182,10 +182,125 @@ header .welcome a:hover {
   clear: both;
   display: table-cell;
 }
+.grid-template {
+  display: grid;
+  grid-template-columns: repeat(3, 257px);
+  gap: 25px;
+}
+#services {
+  height: 794px;
+  background-color: #f2f2f2;
+  padding: 82px 197px;
+  display: flex;
+  align-items: flex-end;
+}
+#services h2 {
+  float: left;
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+  width: 257px;
+  margin-right: 85px;
+}
+#services .services-container .service-card {
+  text-align: center;
+  background-color: #fff;
+  width: 259px;
+}
+#services .services-container img {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+#services .services-container h4 {
+  font-size: 25px;
+  line-height: 42px;
+}
+#services .services-container p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 20px 30px;
+}
+#latest_design {
+  height: 794px;
+  padding: 82px 197px;
+  display: flex;
+  align-items: flex-end;
+}
+#latest_design h2 {
+  float: left;
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+  width: 257px;
+  margin-right: 85px;
+}
+#latest_design .latest-container .date {
+  width: 54px;
+  height: 65px;
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #d25b38;
+}
+#latest_design .latest-container .date .DD {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 53px;
+  line-height: 50.5px;
+}
+#latest_design .latest-container .date .MMYY {
+  display: block;
+  margin-top: -3px;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.93px;
+}
+#latest_design .latest-container .post {
+  position: relative;
+  text-align: left;
+  background-color: #fff;
+  width: 259px;
+}
+#latest_design .latest-container .post-vertical {
+  grid-row: auto / span 3;
+}
+#latest_design .latest-container .post-vertical .date {
+  top: 13px;
+}
+#latest_design .latest-container .post-vertical .post-in {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  box-sizing: border-box;
+}
+#latest_design .latest-container .post-vertical .post-in h4,
+#latest_design .latest-container .post-vertical .post-in p {
+  color: #fff;
+  opacity: 0.85;
+}
+#latest_design .latest-container h4 {
+  font-size: 25px;
+  line-height: 32px;
+}
+#latest_design .latest-container p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-size: 16px;
+  line-height: 24px;
+}
 #creative_team_members {
   height: 794px;
   background-color: #f2f2f2;
-  padding: 82px 215px;
+  padding: 82px 197px;
   display: flex;
   align-items: flex-end;
 }
@@ -196,10 +311,6 @@ header .welcome a:hover {
   line-height: 76px;
   width: 257px;
   margin-right: 85px;
-}
-#creative_team_members .members {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 #creative_team_members .members .member {
   text-align: center;
@@ -222,6 +333,112 @@ header .welcome a:hover {
   font-size: 16px;
   line-height: 24px;
   padding: 0 15px;
+}
+#work {
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 400.5px);
+  grid-auto-rows: 264.5px;
+  grid-auto-flow: dense;
+  justify-content: center;
+}
+.card {
+  grid-row: auto / span 1;
+  grid-column: auto / span 1;
+}
+.card__image {
+  height: 100%;
+  display: flex;
+}
+.card__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.card__side-by-side--m {
+  display: flex;
+}
+.card__content h2 {
+  float: left;
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+  width: 257px;
+  margin-left: 52px;
+  margin-top: 225px;
+}
+.card--featured {
+  grid-row: auto / span 2;
+  grid-column: auto / span 2;
+}
+.card--vertical {
+  grid-row: auto / span 2;
+}
+.card--horizontal {
+  grid-column: auto / span 2;
+}
+#packages {
+  height: 794px;
+  background-color: #f2f2f2;
+  padding: 82px 197px;
+  display: flex;
+  align-items: flex-end;
+}
+#packages h2 {
+  float: left;
+  color: #454443;
+  font-size: 87.03px;
+  line-height: 76px;
+  width: 257px;
+  margin-right: 85px;
+}
+#packages .packages-container .package {
+  text-align: center;
+  background-color: #fff;
+  width: 259px;
+  min-height: 626px;
+}
+#packages .packages-container img {
+  margin-top: 50px;
+  margin-bottom: 57px;
+}
+#packages .packages-container h3 {
+  color: #454443;
+  font-size: 39.52px;
+  line-height: 24px;
+}
+#packages .packages-container h4 {
+  font-size: 25px;
+  line-height: 42px;
+}
+#packages .packages-container p {
+  font-family: 'Open Sans', sans-serif;
+  color: #666564;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 25px;
+}
+#packages .packages-container .price {
+  width: 80px;
+  height: 57px;
+  color: #454443;
+  font-size: 71px;
+  line-height: 65.92px;
+  margin: 25px auto;
+}
+#packages .packages-container .buy-button {
+  display: block;
+  width: 156px;
+  height: 49px;
+  font-size: 20px;
+  line-height: 49px;
+  background-color: #d25b38;
+  margin: 0 auto;
+}
+#packages .packages-container .buy-button:hover {
+  border-color: #d25b38;
 }
 #find_us {
   height: 794px;
@@ -273,6 +490,8 @@ header .welcome a:hover {
   width: 919px;
 }
 footer {
+  height: 148px;
+  box-sizing: border-box;
   padding-top: 63px;
   background-color: #f2f2f2;
   text-align: center;
