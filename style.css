@@ -18,8 +18,18 @@ body {
   display: grid;
   grid-template-rows: 897px minmax(794px, 1fr) 148px;
 }
+@media screen and (max-width: 1602.5px) {
+  body {
+    width: 100vw;
+  }
+}
 b {
   color: #d25b38;
+}
+@media screen and (max-width: 992px) {
+  b {
+    white-space: pre;
+  }
 }
 a {
   text-decoration: none;
@@ -28,30 +38,63 @@ a {
 section {
   margin: 0 auto;
   padding-left: 197px;
+  padding-right: 197px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 992px) {
+  section {
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 header {
-  max-height: 897px;
+  height: fit-content;
+  min-height: 897px;
   background: url(img/header_background.jpg);
   background-size: cover;
-  padding: 57px 197px 0;
-  padding-left: 197px;
+  padding: 57px 197px 20px;
   box-sizing: border-box;
 }
-header .navbar {
-  min-height: 100px;
+@media screen and (max-width: 1602.5px) {
+  header {
+    padding: 57px 12.3vw 0;
+  }
 }
-header .logo {
-  float: left;
+@media screen and (max-width: 992px) {
+  header {
+    text-align: center;
+  }
+}
+header .navbar {
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  header .navbar {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .logo {
+    width: 250px;
+  }
 }
 header nav {
-  float: right;
   margin-top: 43px;
 }
 header nav li {
   font-size: 18px;
   display: inline-block;
   color: #fff;
+  height: 46px;
 }
 header nav a {
   display: block;
@@ -64,13 +107,30 @@ header nav a:hover {
 header .welcome {
   clear: both;
   color: #fff;
-  width: 720px;
-  margin-top: 165px;
+  max-width: 720px;
+  margin-top: 85px;
+}
+@media screen and (max-width: 576px) {
+  header .welcome {
+    margin-top: 120px;
+  }
 }
 header .welcome h2 {
   font-size: 95.39px;
   line-height: 92px;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  header .welcome h2 {
+    font-size: 65px;
+    line-height: 62px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .welcome h2 {
+    font-size: 35px;
+    line-height: 32px;
+  }
 }
 header .welcome p {
   font-family: 'Open Sans', sans-serif;
@@ -78,30 +138,67 @@ header .welcome p {
   font-style: italic;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 576px) {
+  header .welcome p {
+    font-size: 15px;
+  }
+}
+header .welcome .btn-container {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 992px) {
+  header .welcome .btn-container {
+    justify-content: center;
+  }
+}
 header .welcome a {
   display: block;
-  float: left;
   width: 180px;
   height: 57px;
   font-size: 20px;
   line-height: 46px;
   border: 5px solid #fff;
-  box-sizing: border-box;
   text-align: center;
   margin-right: 24px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 576px) {
+  header .welcome a {
+    width: 120px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+header .welcome a:last-child {
+  margin-right: 0;
 }
 header .welcome a:hover {
   background-color: #d25b38;
   border-color: #d25b38;
 }
 #about {
-  height: 770px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1440px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #about .about_text {
-  float: left;
-  width: 289px;
+  width: 25%;
   padding-top: 96px;
-  margin-right: 48px;
+}
+@media screen and (max-width: 1440px) {
+  #about .about_text {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 #about .about_text h2 {
   color: #454443;
@@ -115,39 +212,53 @@ header .welcome a:hover {
   font-size: 16px;
   line-height: 24px;
 }
-#about .wrk_hours {
+#about .about_wrk_hours {
+  width: 72%;
   height: inherit;
+  position: relative;
+}
+@media screen and (max-width: 1440px) {
+  #about .about_wrk_hours {
+    width: 100%;
+  }
+}
+#about .about_wrk_hours .wrk_hours {
+  height: 770px;
   float: left;
 }
-#about .wrk_hours .hours_img {
+#about .about_wrk_hours .wrk_hours .hours_img {
   width: 396px;
   height: inherit;
   background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
   background-blend-mode: multiply;
 }
-#about .designer {
-  float: left;
-  margin-left: -328px;
-  margin-top: 65px;
+#about .about_wrk_hours .designers-container {
+  position: absolute;
+  left: 57px;
+  top: 65px;
 }
-#about .designer .designer_name {
+#about .about_wrk_hours .designers-container .designer {
+  margin-bottom: 20px;
+  clear: both;
+}
+#about .about_wrk_hours .designers-container .designer .designer_name {
   float: left;
 }
-#about .designer .designer_name h3 {
+#about .about_wrk_hours .designers-container .designer .designer_name h3 {
   color: #ffffff;
   font-size: 39.52px;
   line-height: 40px;
   text-align: right;
   padding-left: 80px;
 }
-#about .designer .designer_name h4 {
+#about .about_wrk_hours .designers-container .designer .designer_name h4 {
   color: #ffffff;
   font-size: 25px;
   line-height: 35px;
   text-align: right;
   margin-bottom: 40px;
 }
-#about .designer .designer_tag {
+#about .about_wrk_hours .designers-container .designer .designer_tag {
   position: relative;
   float: left;
   width: 86px;
@@ -157,7 +268,7 @@ header .welcome a:hover {
   margin-top: -22px;
   background: rgba(199, 40, 25, 0.45);
 }
-#about .designer .designer_tag .icon {
+#about .about_wrk_hours .designers-container .designer .designer_tag .icon {
   position: absolute;
   display: block;
   width: 60px;
@@ -167,7 +278,7 @@ header .welcome a:hover {
   border-radius: 50%;
   background: #ffffff url(icons/Icon.png) no-repeat center;
 }
-#about .designer .designer_desc {
+#about .about_wrk_hours .designers-container .designer .designer_desc {
   max-width: 363px;
   float: left;
   margin-left: 30px;
@@ -177,22 +288,25 @@ header .welcome a:hover {
   font-size: 16px;
   line-height: 24px;
 }
-#about::after {
-  content: '';
-  clear: both;
-  display: table-cell;
-}
 .grid-template {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 257px);
+  grid-template-columns: repeat(auto-fit, 257px);
   gap: 25px;
+  margin: 0 auto;
 }
 #services {
-  height: 794px;
   background-color: #f2f2f2;
-  padding: 82px 197px;
+  padding-top: 82px;
+  padding-bottom: 82px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  #services {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #services h2 {
   float: left;
@@ -201,6 +315,13 @@ header .welcome a:hover {
   line-height: 76px;
   width: 257px;
   margin-right: 85px;
+}
+@media screen and (max-width: 992px) {
+  #services h2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
 }
 #services .services-container .service-card {
   text-align: center;
@@ -223,10 +344,16 @@ header .welcome a:hover {
   padding: 0 20px 30px;
 }
 #latest_design {
-  height: 794px;
-  padding: 82px 197px;
+  padding-top: 82px;
+  padding-bottom: 82px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  #latest_design {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #latest_design h2 {
   float: left;
@@ -235,6 +362,13 @@ header .welcome a:hover {
   line-height: 76px;
   width: 257px;
   margin-right: 85px;
+}
+@media screen and (max-width: 992px) {
+  #latest_design h2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
 }
 #latest_design .latest-container .date {
   width: 54px;
@@ -298,11 +432,17 @@ header .welcome a:hover {
   line-height: 24px;
 }
 #creative_team_members {
-  height: 794px;
   background-color: #f2f2f2;
-  padding: 82px 197px;
+  padding-top: 82px;
+  padding-bottom: 82px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  #creative_team_members {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #creative_team_members h2 {
   float: left;
@@ -311,6 +451,13 @@ header .welcome a:hover {
   line-height: 76px;
   width: 257px;
   margin-right: 85px;
+}
+@media screen and (max-width: 992px) {
+  #creative_team_members h2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
 }
 #creative_team_members .members .member {
   text-align: center;
@@ -380,11 +527,17 @@ header .welcome a:hover {
   grid-column: auto / span 2;
 }
 #packages {
-  height: 794px;
   background-color: #f2f2f2;
-  padding: 82px 197px;
+  padding-top: 82px;
+  padding-bottom: 82px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  #packages {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #packages h2 {
   float: left;
@@ -393,6 +546,13 @@ header .welcome a:hover {
   line-height: 76px;
   width: 257px;
   margin-right: 85px;
+}
+@media screen and (max-width: 992px) {
+  #packages h2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
 }
 #packages .packages-container .package {
   text-align: center;
