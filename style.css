@@ -207,15 +207,33 @@ section {
 }
 #about .about_text h2 {
   color: #454443;
-  font-size: 5.4rem;
-  line-height: 4.6rem;
+  font-size: 87.03px;
+  line-height: 76px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  #about .about_text h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
 }
 #about .about_text p {
   font-family: 'Open Sans', sans-serif;
   color: #636363;
   font-size: 16px;
   line-height: 24px;
+}
+@media screen and (max-width: 1200px) {
+  #about .about_text p {
+    column-count: 2;
+    column-gap: 25px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about .about_text p {
+    column-count: 1;
+  }
 }
 #about .about_wrk_hours {
   width: 72%;
@@ -234,6 +252,12 @@ section {
   width: 40%;
   background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
   background-blend-mode: multiply;
+}
+@media screen and (max-width: 768px) {
+  #about .about_wrk_hours .wrk_hours {
+    float: none;
+    margin: 0 auto;
+  }
 }
 #about .about_wrk_hours .wrk_hours .designer_name {
   position: relative;
@@ -280,12 +304,17 @@ section {
   padding-left: 73px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  #about .about_wrk_hours .designer_desc-container {
+    display: none;
+  }
+}
 #about .about_wrk_hours .designer_desc-container .designer_desc {
   height: 116px;
   margin-top: 65px;
   font-family: 'Open Sans', sans-serif;
   color: #636363;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
 }
 .grid-template {
@@ -323,6 +352,12 @@ section {
     width: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  #services h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+}
 #services .services-container .service-card {
   text-align: center;
   background-color: #fff;
@@ -339,7 +374,7 @@ section {
 #services .services-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
   padding: 0 20px 30px;
 }
@@ -380,6 +415,12 @@ section {
     margin-right: 0;
     margin-bottom: 30px;
     width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  #latest_design h2 {
+    font-size: 40px;
+    line-height: 30px;
   }
 }
 #latest_design .latest-container .date {
@@ -440,7 +481,7 @@ section {
 #latest_design .latest-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
 }
 #creative_team_members {
@@ -471,6 +512,12 @@ section {
     width: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  #creative_team_members h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+}
 #creative_team_members .members .member {
   text-align: center;
 }
@@ -489,7 +536,7 @@ section {
 #creative_team_members .members p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
   padding: 0 15px;
 }
@@ -527,6 +574,12 @@ section {
   width: 257px;
   margin-left: 52px;
   margin-top: 225px;
+}
+@media screen and (max-width: 768px) {
+  .card__content h2 {
+    font-size: 50px;
+    line-height: 40px;
+  }
 }
 .card--featured {
   grid-row: auto / span 2;
@@ -566,6 +619,12 @@ section {
     width: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  #packages h2 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+}
 #packages .packages-container .package {
   text-align: center;
   background-color: #fff;
@@ -588,7 +647,7 @@ section {
 #packages .packages-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
   padding: 0 25px;
 }
@@ -638,7 +697,7 @@ section {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
   overflow: hidden;
 }
@@ -646,7 +705,7 @@ section {
   display: block;
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
 }
 #find_us .contacts p {
@@ -675,6 +734,6 @@ footer {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 24px;
 }

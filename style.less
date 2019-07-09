@@ -16,15 +16,15 @@ sans-serif;
 }
 
 html {
-//    @media screen and (max-width: 1602.5px) {
-//        font-size: 15px;
-//    }
-//    @media screen and (max-width: 1200px) {
-//        font-size: 14px;
-//    }
-//    @media screen and (max-width: 576px) {
-//        font-size: 10px;
-//    }
+    //    @media screen and (max-width: 1602.5px) {
+    //        font-size: 15px;
+    //    }
+    //    @media screen and (max-width: 1200px) {
+    //        font-size: 14px;
+    //    }
+    //    @media screen and (max-width: 576px) {
+    //        font-size: 10px;
+    //    }
 }
 
 body {
@@ -122,10 +122,10 @@ header {
                 font-size: 65px;
                 line-height: 62px;
             }
-//            @media screen and (max-width: 576px) {
-//                font-size: 35px;
-//                line-height: 32px;
-//            }
+            //            @media screen and (max-width: 576px) {
+            //                font-size: 35px;
+            //                line-height: 32px;
+            //            }
         }
         p {
             font-family: 'Open Sans', sans-serif;
@@ -135,9 +135,9 @@ header {
             @media screen and (max-width: 992px) {
                 font-size: 20px;
             }
-//            @media screen and (max-width: 576px) {
-//                font-size: 15px;
-//            }
+            //            @media screen and (max-width: 576px) {
+            //                font-size: 15px;
+            //            }
         }
         .btn-container {
             display: flex;
@@ -162,12 +162,12 @@ header {
                 font-size: 18px;
                 line-height: 40px;
             }
-//            @media screen and (max-width: 576px) {
-//                width: 120px;
-//                height: 27px;
-//                font-size: 10px;
-//                line-height: 16px;
-//            }
+            //            @media screen and (max-width: 576px) {
+            //                width: 120px;
+            //                height: 27px;
+            //                font-size: 10px;
+            //                line-height: 16px;
+            //            }
         }
         a:last-child {
             margin-right: 0;
@@ -212,15 +212,27 @@ section {
         }
         h2 {
             color: #454443;
-            font-size: 5.4rem;
-            line-height: 4.6rem;
+            font-size: 87.03px;
+            line-height: 76px;
             margin-bottom: 40px;
+            @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 30px;
+            }
         }
         p {
             font-family: 'Open Sans', sans-serif;
             color: #636363;
             font-size: 16px;
             line-height: 24px;
+            @media screen and (max-width: 1200px) {
+                column-count: 2;
+                column-gap: 25px;
+                text-align: justify;
+            }
+            @media screen and (max-width: 576px) {
+                column-count: 1;
+            }
         }
     }
     .about_wrk_hours {
@@ -238,6 +250,13 @@ section {
             width: 40%;
             background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
             background-blend-mode: multiply;
+            @media screen and (max-width: 992px) {
+             //   min-width: 282px;
+            }
+            @media screen and (max-width: 768px) {
+                float: none;
+                margin: 0 auto;
+            }
             .designer_name {
                 position: relative;
                 height: 116px;
@@ -250,6 +269,9 @@ section {
                     line-height: 40px;
                     text-align: right;
                     padding-left: 80px;
+                    @media screen and (max-width: 992px) {
+                        //font-size: 30px;
+                    }
                 }
                 h4 {
                     color: #ffffff;
@@ -257,6 +279,9 @@ section {
                     line-height: 35px;
                     text-align: right;
                     margin-bottom: 40px;
+                    @media screen and (max-width: 992px) {
+                        //font-size: 20px;
+                    }
                 }
                 .designer_tag {
                     position: absolute;
@@ -283,12 +308,15 @@ section {
             max-width: 363px;
             padding-left: 73px;
             overflow: hidden;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
             .designer_desc {
                 height: 116px;
                 margin-top: 65px;
                 font-family: 'Open Sans', sans-serif;
                 color: #636363;
-                font-size: 1rem;
+                font-size: 16px;
                 line-height: 24px;
             }
         }
@@ -326,6 +354,10 @@ section {
             margin-bottom: 30px;
             width: auto;
         }
+        @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 30px;
+        }
     }
     .services-container {
         .service-card {
@@ -344,7 +376,7 @@ section {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
             padding: 0 20px 30px;
         }
@@ -381,6 +413,10 @@ section {
             margin-bottom: 30px;
             width: auto;
         }
+        @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 30px;
+            }
     }
     .latest-container {
         .date {
@@ -441,7 +477,7 @@ section {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
         }
     }
@@ -470,6 +506,10 @@ section {
             margin-bottom: 30px;
             width: auto;
         }
+        @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 30px;
+        }
     }
     .members {
         .member {
@@ -490,7 +530,7 @@ section {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
             padding: 0 15px;
         }
@@ -539,7 +579,12 @@ section {
         width: 257px;
         margin-left: 52px;
         margin-top: 225px;
+        @media screen and (max-width: 768px) {
+                font-size: 50px;
+                line-height: 40px;
+        }
     }
+    
 }
 
 .card--featured {
@@ -578,6 +623,10 @@ section {
             margin-bottom: 30px;
             width: auto;
         }
+        @media screen and (max-width: 768px) {
+                font-size: 40px;
+                line-height: 30px;
+        }
     }
     .packages-container {
         .package {
@@ -602,7 +651,7 @@ section {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
             padding: 0 25px;
         }
@@ -653,7 +702,7 @@ section {
             font-family: @open_sans;
             color: #666564;
             font-style: normal;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
             overflow: hidden;
         }
@@ -661,7 +710,7 @@ section {
             display: block;
             font-family: @open_sans;
             color: #666564;
-            font-size: 1rem;
+            font-size: 16px;
             line-height: 24px;
         }
         p {
@@ -691,6 +740,6 @@ footer {
     text-align: center;
     font-family: @open_sans;
     color: #666564;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 24px;
 }
