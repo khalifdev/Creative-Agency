@@ -11,21 +11,6 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 1602.5px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 576px) {
-  html {
-    font-size: 10px;
-  }
-}
 body {
   max-width: 1602px;
   margin: 0 auto;
