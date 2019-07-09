@@ -11,6 +11,16 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 1602.5px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
 body {
   max-width: 1602px;
   margin: 0 auto;
@@ -20,7 +30,7 @@ body {
 }
 @media screen and (max-width: 1602.5px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
 }
 b {
@@ -34,19 +44,6 @@ b {
 a {
   text-decoration: none;
   color: #fff;
-}
-section {
-  margin: 0 auto;
-  padding-left: 197px;
-  padding-right: 197px;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 992px) {
-  section {
-    width: 100vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
 }
 .clearfix:after {
   content: "";
@@ -63,7 +60,7 @@ header {
 }
 @media screen and (max-width: 1602.5px) {
   header {
-    padding: 57px 12.3vw 0;
+    padding: 57px 12.3% 0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -178,12 +175,30 @@ header .welcome a:hover {
   background-color: #d25b38;
   border-color: #d25b38;
 }
+section {
+  margin: 0 auto;
+  padding-left: 197px;
+  padding-right: 197px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1602px) {
+  section {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 #about {
   height: fit-content;
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1602px) {
+  #about {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1200px) {
   #about {
     flex-direction: column;
     align-items: center;
@@ -193,7 +208,7 @@ header .welcome a:hover {
   width: 25%;
   padding-top: 96px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   #about .about_text {
     width: 100%;
     margin-bottom: 30px;
@@ -209,7 +224,7 @@ header .welcome a:hover {
 #about .about_text p {
   font-family: 'Open Sans', sans-serif;
   color: #636363;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 #about .about_wrk_hours {
@@ -217,7 +232,7 @@ header .welcome a:hover {
   height: inherit;
   position: relative;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   #about .about_wrk_hours {
     width: 100%;
   }
@@ -225,50 +240,42 @@ header .welcome a:hover {
 #about .about_wrk_hours .wrk_hours {
   height: 770px;
   float: left;
-}
-#about .about_wrk_hours .wrk_hours .hours_img {
-  width: 396px;
-  height: inherit;
+  min-width: 335px;
+  width: 40%;
   background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
   background-blend-mode: multiply;
 }
-#about .about_wrk_hours .designers-container {
-  position: absolute;
-  left: 57px;
-  top: 65px;
+#about .about_wrk_hours .wrk_hours .designer_name {
+  position: relative;
+  height: 116px;
+  margin-top: 65px;
+  margin-right: 52px;
+  float: right;
 }
-#about .about_wrk_hours .designers-container .designer {
-  margin-bottom: 20px;
-  clear: both;
-}
-#about .about_wrk_hours .designers-container .designer .designer_name {
-  float: left;
-}
-#about .about_wrk_hours .designers-container .designer .designer_name h3 {
+#about .about_wrk_hours .wrk_hours .designer_name h3 {
   color: #ffffff;
   font-size: 39.52px;
   line-height: 40px;
   text-align: right;
   padding-left: 80px;
 }
-#about .about_wrk_hours .designers-container .designer .designer_name h4 {
+#about .about_wrk_hours .wrk_hours .designer_name h4 {
   color: #ffffff;
   font-size: 25px;
   line-height: 35px;
   text-align: right;
   margin-bottom: 40px;
 }
-#about .about_wrk_hours .designers-container .designer .designer_tag {
-  position: relative;
-  float: left;
+#about .about_wrk_hours .wrk_hours .designer_name .designer_tag {
+  position: absolute;
+  right: -95px;
+  top: -25px;
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  margin-left: 9px;
-  margin-top: -22px;
   background: rgba(199, 40, 25, 0.45);
 }
-#about .about_wrk_hours .designers-container .designer .designer_tag .icon {
+#about .about_wrk_hours .wrk_hours .designer_name .designer_tag .icon {
   position: absolute;
   display: block;
   width: 60px;
@@ -278,14 +285,17 @@ header .welcome a:hover {
   border-radius: 50%;
   background: #ffffff url(icons/Icon.png) no-repeat center;
 }
-#about .about_wrk_hours .designers-container .designer .designer_desc {
+#about .about_wrk_hours .designer_desc-container {
   max-width: 363px;
-  float: left;
-  margin-left: 30px;
-  margin-top: -10px;
+  padding-left: 73px;
+  overflow: hidden;
+}
+#about .about_wrk_hours .designer_desc-container .designer_desc {
+  height: 116px;
+  margin-top: 65px;
   font-family: 'Open Sans', sans-serif;
   color: #636363;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 .grid-template {
@@ -339,7 +349,7 @@ header .welcome a:hover {
 #services .services-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   padding: 0 20px 30px;
 }
@@ -348,6 +358,18 @@ header .welcome a:hover {
   padding-bottom: 82px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 1602px) {
+  #latest_design {
+    padding-left: 12.3%;
+    padding-right: 12.3%;
+  }
+}
+@media screen and (max-width: 1460px) {
+  #latest_design {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 @media screen and (max-width: 992px) {
   #latest_design {
@@ -428,7 +450,7 @@ header .welcome a:hover {
 #latest_design .latest-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 #creative_team_members {
@@ -477,7 +499,7 @@ header .welcome a:hover {
 #creative_team_members .members p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   padding: 0 15px;
 }
@@ -576,7 +598,7 @@ header .welcome a:hover {
 #packages .packages-container p {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   padding: 0 25px;
 }
@@ -602,6 +624,7 @@ header .welcome a:hover {
 }
 #find_us {
   height: 794px;
+  padding-right: 0;
 }
 #find_us .contacts {
   float: left;
@@ -625,7 +648,7 @@ header .welcome a:hover {
   font-family: 'Open Sans', sans-serif;
   color: #666564;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   overflow: hidden;
 }
@@ -633,7 +656,7 @@ header .welcome a:hover {
   display: block;
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 #find_us .contacts p {
@@ -649,6 +672,11 @@ header .welcome a:hover {
   background: url(img/chair.jpg) -681px 0px;
   width: 919px;
 }
+@media screen and (max-width: 1440px) {
+  #find_us .chair {
+    width: 70%;
+  }
+}
 footer {
   height: 148px;
   box-sizing: border-box;
@@ -657,6 +685,6 @@ footer {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #666564;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }

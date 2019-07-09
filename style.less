@@ -14,6 +14,15 @@
     padding: 0;
 }
 
+html {
+    @media screen and (max-width: 1602.5px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
 body {
     max-width: 1602px;
     margin: 0 auto;
@@ -21,37 +30,23 @@ body {
     display: grid;
     grid-template-rows: 897px minmax(794px, 1fr) 148px;
     @media screen and (max-width: 1602.5px) {
-        width: 100vw;
+        width: 100%;
     }
 }
 
 b {
     color: #d25b38;
-    
-}
-@media screen and (max-width: 992px){
-    b {
+    @media screen and (max-width: 992px){
         white-space: pre;
-    }        
+    }
 }
+
 
 a {
     text-decoration: none;
     color: #fff;
 }
 
-section {
-    margin: 0 auto;
-    padding-left: 197px;
-    padding-right: 197px;
-    box-sizing: border-box;
-    @media screen and (max-width: 992px) {
-        width: 100vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    
-}
 
 .clearfix:after {
     content: "";
@@ -67,8 +62,7 @@ header {
     padding: 57px 197px 20px;
     box-sizing: border-box;
     @media screen and (max-width: 1602.5px) {
-        //width: 100vw;
-        padding: 57px 12.3vw 0;
+        padding: 57px 12.3% 0;
     }
     @media screen and (max-width: 992px){
         text-align: center;
@@ -172,21 +166,35 @@ header {
     }
 }
 
-main {
+
+section {
+    margin: 0 auto;
+    padding-left: 197px;
+    padding-right: 197px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1602px) {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
 }
 
 #about {
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1602px) {
+            padding: 0 5%;
+    }
+    @media screen and (max-width: 1200px) {
             flex-direction: column;
             align-items: center;
     }
     .about_text {
         width: 25%;
         padding-top: 96px;
-        @media screen and (max-width: 1440px) {
+        @media screen and (max-width: 1200px) {
             width: 100%;
             margin-bottom: 30px;
             text-align: center;
@@ -201,7 +209,7 @@ main {
         p {
             font-family: 'Open Sans', sans-serif;
             color: #636363;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
         }
     }
@@ -210,84 +218,73 @@ main {
         width: 72%; 
         height: inherit;
         position: relative;
-        @media screen and (max-width: 1440px) {
+        @media screen and (max-width: 1200px) {
             width: 100%;
         }
         .wrk_hours {
-        height: 770px;
-        float: left;
-            .hours_img {
-                width: 396px;
-                height: inherit;
-                background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
-                background-blend-mode: multiply;
-            }
-        }
-        .designers-container {
-        //display: grid;
-        //grid-template-columns: 275px 86px minmax(280px, 400px);
-        //gap: 30px;
-        //row-gap: 65px;
-        position: absolute;
-        left: 57px;
-        top: 65px;
-            .designer {
-                margin-bottom: 20px;
-                clear: both;
-            
-        .designer_name {
+            height: 770px;
             float: left;
-            h3 {
-                color: #ffffff;
-                font-size: 39.52px;
-                line-height: 40px;
-                text-align: right;
-                padding-left: 80px;
-            }
-            h4 {
-                color: #ffffff;
-                font-size: 25px;
-                line-height: 35px;
-                text-align: right;
-                margin-bottom: 40px;
-            }
-        }
-        .designer_tag {
-            position: relative;
-            float: left;
-            width: 86px;
-            height: 86px;
-            border-radius: 50%;
-            margin-left: 9px;
-            margin-top: -22px;
-            background: rgba(199, 40, 25, 0.45);
-            .icon {
+            min-width: 335px;
+            width: 40%;
+            background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
+            background-blend-mode: multiply;
+            .designer_name {
+                position: relative;
+                height: 116px;
+                margin-top: 65px;
+                margin-right: 52px;
+                float: right;
+                h3 {
+                    color: #ffffff;
+                    font-size: 39.52px;
+                    line-height: 40px;
+                    text-align: right;
+                    padding-left: 80px;
+                }
+                h4 {
+                    color: #ffffff;
+                    font-size: 25px;
+                    line-height: 35px;
+                    text-align: right;
+                    margin-bottom: 40px;
+                }
+                .designer_tag {
                 position: absolute;
-                display: block;
-                width: 60px;
-                height: 60px;
-                top: 13px;
-                left: 13px;
+                right: -95px;
+                top: -25px;
+                width: 86px;
+                height: 86px;
                 border-radius: 50%;
-                background: #fff url(icons/Icon.png) no-repeat center;
+                background: rgba(199, 40, 25, 0.45);
+                .icon {
+                    position: absolute;
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    top: 13px;
+                    left: 13px;
+                    border-radius: 50%;
+                    background: #fff url(icons/Icon.png) no-repeat center;
+                }
+            }
+            }
+            
+        }
+        .designer_desc-container {
+            max-width: 363px;
+            padding-left: 73px;
+            overflow: hidden;
+            .designer_desc {
+                height: 116px;
+                margin-top: 65px;
+                font-family: 'Open Sans', sans-serif;
+                color: #636363;
+                font-size: 1rem;
+                line-height: 24px;
             }
         }
-        .designer_desc {
-            max-width: 363px;
-            float: left;
-            margin-left: 30px;
-            margin-top: -10px;
-            font-family: 'Open Sans', sans-serif;
-            color: #636363;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        }
+    
     }
-    }
-    
-    
-    
 }
 
 
@@ -340,7 +337,7 @@ main {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
             padding: 0 20px 30px;
         }
@@ -353,9 +350,17 @@ main {
     padding-bottom: 82px;
     display: flex;
     align-items: flex-end;
+    @media screen and (max-width: 1602px) {
+        padding-left: 12.3%;
+        padding-right: 12.3%;
+    }
+    @media screen and (max-width: 1460px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     @media screen and (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         float: left;
@@ -429,7 +434,7 @@ main {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
         }
     }
@@ -478,7 +483,7 @@ main {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
             padding: 0 15px;
         }
@@ -590,7 +595,7 @@ main {
         p {
             font-family: @open_sans;
             color: #666564;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
             padding: 0 25px;
         }
@@ -619,6 +624,8 @@ main {
 
 #find_us {
     height: @section_height;
+    padding-right: 0;
+    
     .contacts {
         float: left;
         max-width: 23%;
@@ -640,7 +647,7 @@ main {
             font-family: @open_sans;
             color: #666564;
             font-style: normal;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
             overflow: hidden;
         }
@@ -648,7 +655,7 @@ main {
             display: block;
             font-family: @open_sans;
             color: #666564;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 24px;
         }
         p {
@@ -664,6 +671,9 @@ main {
         height: inherit;
         background: url(img/chair.jpg) -681px 0px;
         width: 919px;
+        @media screen and (max-width: 1440px) {
+            width: 70%;
+        }    
     }
 }
 
@@ -675,6 +685,6 @@ footer {
     text-align: center;
     font-family: @open_sans;
     color: #666564;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
 }
