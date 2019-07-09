@@ -122,16 +122,16 @@ header .welcome h2 {
   line-height: 92px;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 992px) {
+  header .welcome h2 {
+    font-size: 80px;
+    line-height: 74px;
+  }
+}
 @media screen and (max-width: 768px) {
   header .welcome h2 {
     font-size: 65px;
     line-height: 62px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header .welcome h2 {
-    font-size: 35px;
-    line-height: 32px;
   }
 }
 header .welcome p {
@@ -140,9 +140,9 @@ header .welcome p {
   font-style: italic;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   header .welcome p {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 header .welcome .btn-container {
@@ -165,12 +165,12 @@ header .welcome a {
   margin-right: 24px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   header .welcome a {
-    width: 120px;
-    height: 27px;
-    font-size: 10px;
-    line-height: 16px;
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 40px;
   }
 }
 header .welcome a:last-child {

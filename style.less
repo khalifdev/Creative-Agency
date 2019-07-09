@@ -1,5 +1,6 @@
 @section_height: 794px;
-@open_sans: 'Open Sans', sans-serif;
+@open_sans: 'Open Sans',
+sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
     font-family: 'Bebas Neue Bold';
@@ -24,7 +25,6 @@ html {
     @media screen and (max-width: 576px) {
         font-size: 10px;
     }
-    
 }
 
 body {
@@ -40,17 +40,15 @@ body {
 
 b {
     color: #d25b38;
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 992px) {
         white-space: pre;
     }
 }
-
 
 a {
     text-decoration: none;
     color: #fff;
 }
-
 
 .clearfix:after {
     content: "";
@@ -68,12 +66,10 @@ header {
     @media screen and (max-width: 1602.5px) {
         padding: 57px 12.3% 0;
     }
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 992px) {
         text-align: center;
     }
-    @media screen and (max-width: 576px) {
-        
-    }
+    @media screen and (max-width: 576px) {}
     .navbar {
         height: 180px;
         display: flex;
@@ -118,28 +114,35 @@ header {
             font-size: 95.39px;
             line-height: 92px;
             margin-bottom: 35px;
+            @media screen and (max-width: 992px) {
+                font-size: 80px;
+                line-height: 74px;
+            }
             @media screen and (max-width: 768px) {
                 font-size: 65px;
                 line-height: 62px;
             }
-            @media screen and (max-width: 576px) {
-                font-size: 35px;
-                line-height: 32px;
-            }
+//            @media screen and (max-width: 576px) {
+//                font-size: 35px;
+//                line-height: 32px;
+//            }
         }
         p {
             font-family: 'Open Sans', sans-serif;
             font-size: 25px;
             font-style: italic;
             margin-bottom: 50px;
-            @media screen and (max-width: 576px) {
-                font-size: 15px;
+            @media screen and (max-width: 992px) {
+                font-size: 20px;
             }
+//            @media screen and (max-width: 576px) {
+//                font-size: 15px;
+//            }
         }
         .btn-container {
             display: flex;
             justify-content: flex-start;
-            @media screen and (max-width: 992px){
+            @media screen and (max-width: 992px) {
                 justify-content: center;
             }
         }
@@ -153,12 +156,18 @@ header {
             text-align: center;
             margin-right: 24px;
             box-sizing: border-box;
-            @media screen and (max-width: 576px) {
-                width: 120px;
-                height: 27px;
-                font-size: 10px;                
-                line-height: 16px;
+            @media screen and (max-width: 992px) {
+                width: 165px;
+                height: 50px;
+                font-size: 18px;
+                line-height: 40px;
             }
+//            @media screen and (max-width: 576px) {
+//                width: 120px;
+//                height: 27px;
+//                font-size: 10px;
+//                line-height: 16px;
+//            }
         }
         a:last-child {
             margin-right: 0;
@@ -170,7 +179,6 @@ header {
     }
 }
 
-
 section {
     margin: 0 auto;
     padding-left: 197px;
@@ -181,7 +189,6 @@ section {
         padding-left: 5%;
         padding-right: 5%;
     }
-    
 }
 
 #about {
@@ -189,11 +196,11 @@ section {
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1602px) {
-            padding: 0 5%;
+        padding: 0 5%;
     }
     @media screen and (max-width: 1200px) {
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     .about_text {
         width: 25%;
@@ -202,7 +209,6 @@ section {
             width: 100%;
             margin-bottom: 30px;
             text-align: center;
-                
         }
         h2 {
             color: #454443;
@@ -218,8 +224,8 @@ section {
         }
     }
     .about_wrk_hours {
-//        float: right;
-        width: 72%; 
+        //        float: right;
+        width: 72%;
         height: inherit;
         position: relative;
         @media screen and (max-width: 1200px) {
@@ -253,26 +259,25 @@ section {
                     margin-bottom: 40px;
                 }
                 .designer_tag {
-                position: absolute;
-                right: -95px;
-                top: -25px;
-                width: 86px;
-                height: 86px;
-                border-radius: 50%;
-                background: rgba(199, 40, 25, 0.45);
-                .icon {
                     position: absolute;
-                    display: block;
-                    width: 60px;
-                    height: 60px;
-                    top: 13px;
-                    left: 13px;
+                    right: -95px;
+                    top: -25px;
+                    width: 86px;
+                    height: 86px;
                     border-radius: 50%;
-                    background: #fff url(icons/Icon.png) no-repeat center;
+                    background: rgba(199, 40, 25, 0.45);
+                    .icon {
+                        position: absolute;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        top: 13px;
+                        left: 13px;
+                        border-radius: 50%;
+                        background: #fff url(icons/Icon.png) no-repeat center;
+                    }
                 }
             }
-            }
-            
         }
         .designer_desc-container {
             max-width: 363px;
@@ -287,10 +292,8 @@ section {
                 line-height: 24px;
             }
         }
-    
     }
 }
-
 
 .grid-template {
     width: 100%;
@@ -308,8 +311,8 @@ section {
     display: flex;
     align-items: flex-end;
     @media screen and (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         float: left;
@@ -452,8 +455,8 @@ section {
     display: flex;
     align-items: flex-end;
     @media screen and (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         float: left;
@@ -560,8 +563,8 @@ section {
     display: flex;
     align-items: flex-end;
     @media screen and (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         float: left;
@@ -629,7 +632,6 @@ section {
 #find_us {
     height: @section_height;
     padding-right: 0;
-    
     .contacts {
         float: left;
         max-width: 23%;
@@ -677,7 +679,7 @@ section {
         width: 919px;
         @media screen and (max-width: 1440px) {
             width: 70%;
-        }    
+        }
     }
 }
 
