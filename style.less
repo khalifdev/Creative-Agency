@@ -64,8 +64,9 @@ header {
     padding: 57px 197px 20px;
     box-sizing: border-box;
     @media screen and (max-width: 1602.5px) {
-        padding: 57px 12.3% 0;
+        padding: 57px 5% 0;
     }
+    
     @media screen and (max-width: 992px) {
         text-align: center;
     }
@@ -114,7 +115,7 @@ header {
             font-size: 95.39px;
             line-height: 92px;
             margin-bottom: 35px;
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1200px) {
                 font-size: 80px;
                 line-height: 74px;
             }
@@ -215,6 +216,10 @@ section {
             font-size: 87.03px;
             line-height: 76px;
             margin-bottom: 40px;
+            @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+            }
             @media screen and (max-width: 768px) {
                 font-size: 45px;
                 line-height: 30px;
@@ -243,81 +248,89 @@ section {
         @media screen and (max-width: 1200px) {
             width: 100%;
         }
-        .wrk_hours {
-            height: 770px;
-            float: left;
-            min-width: 335px;
-            width: 40%;
-            background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
-            background-blend-mode: multiply;
-            @media screen and (max-width: 992px) {
-                //   min-width: 282px;
-            }
-            @media screen and (max-width: 768px) {
-                float: none;
+        .hours-container {
+            @media screen and (max-width: 1200px) {
                 margin: 0 auto;
             }
-            .designer_name {
-                position: relative;
-                height: 116px;
-                margin-top: 65px;
-                margin-right: 52px;
-                float: right;
-                h3 {
-                    color: #ffffff;
-                    font-size: 39.52px;
-                    line-height: 40px;
-                    text-align: right;
-                    padding-left: 80px;
-                    @media screen and (max-width: 992px) {
-                        //font-size: 30px;
-                    }
+            .wrk_hours {
+                height: 770px;
+                float: left;
+                min-width: 335px;
+                width: 40%;
+                background: #d25b38 url(img/for_about.jpg) no-repeat -132px 0px;
+                background-blend-mode: multiply;
+                @media screen and (max-width: 992px) {
+                    //   min-width: 282px;
                 }
-                h4 {
-                    color: #ffffff;
-                    font-size: 25px;
-                    line-height: 35px;
-                    text-align: right;
-                    margin-bottom: 40px;
-                    @media screen and (max-width: 992px) {
-                        //font-size: 20px;
-                    }
+                @media screen and (max-width: 768px) {
+                    float: none;
+                    margin: 0 auto;
                 }
-                .designer_tag {
-                    position: absolute;
-                    right: -95px;
-                    top: -25px;
-                    width: 86px;
-                    height: 86px;
-                    border-radius: 50%;
-                    background: rgba(199, 40, 25, 0.45);
-                    .icon {
+                .designer_name {
+                    position: relative;
+                    height: 116px;
+                    margin-top: 65px;
+                    margin-right: 52px;
+                    float: right;
+                    h3 {
+                        color: #ffffff;
+                        font-size: 39.52px;
+                        line-height: 40px;
+                        text-align: right;
+                        padding-left: 80px;
+                        @media screen and (max-width: 992px) {
+                            //font-size: 30px;
+                        }
+                    }
+                    h4 {
+                        color: #ffffff;
+                        font-size: 25px;
+                        line-height: 35px;
+                        text-align: right;
+                        margin-bottom: 40px;
+                        @media screen and (max-width: 992px) {
+                            //font-size: 20px;
+                        }
+                    }
+                    .designer_tag {
                         position: absolute;
-                        display: block;
-                        width: 60px;
-                        height: 60px;
-                        top: 13px;
-                        left: 13px;
+                        right: -95px;
+                        top: -25px;
+                        width: 86px;
+                        height: 86px;
                         border-radius: 50%;
-                        background: #fff url(icons/Icon.png) no-repeat center;
+                        background: rgba(199, 40, 25, 0.45);
+                        .icon {
+                            position: absolute;
+                            display: block;
+                            width: 60px;
+                            height: 60px;
+                            top: 13px;
+                            left: 13px;
+                            border-radius: 50%;
+                            background: #fff url(icons/Icon.png) no-repeat center;
+                        }
+                        @media screen and (max-width: 400px) {
+                            display: none;
+                        }
                     }
                 }
             }
-        }
-        .designer_desc-container {
-            max-width: 363px;
-            padding-left: 73px;
-            overflow: hidden;
-            @media screen and (max-width: 768px) {
-                display: none;
-            }
-            .designer_desc {
-                height: 116px;
-                margin-top: 65px;
-                font-family: 'Open Sans', sans-serif;
-                color: #636363;
-                font-size: 16px;
-                line-height: 24px;
+            .designer_desc-container {
+                max-width: 363px;
+                padding-left: 73px;
+                overflow: hidden;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+                .designer_desc {
+                    height: 116px;
+                    margin-top: 65px;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #636363;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -363,6 +376,10 @@ section {
         line-height: 76px;
         width: 257px;
         margin-right: 85px;
+        @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+        }
         @media screen and (max-width: 992px) {
             margin-right: 0;
             margin-bottom: 30px;
@@ -421,6 +438,10 @@ section {
         line-height: 76px;
         width: 257px;
         margin-right: 85px;
+        @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+        }
         @media screen and (max-width: 992px) {
             margin-right: 0;
             margin-bottom: 30px;
@@ -514,6 +535,10 @@ section {
         line-height: 76px;
         width: 257px;
         margin-right: 85px;
+        @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+            }
         @media screen and (max-width: 992px) {
             margin-right: 0;
             margin-bottom: 30px;
@@ -599,6 +624,10 @@ section {
         width: 257px;
         margin-left: 52px;
         margin-top: 225px;
+        @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+            }
         @media screen and (max-width: 768px) {
             font-size: 50px;
             line-height: 40px;
@@ -645,6 +674,10 @@ section {
         line-height: 76px;
         width: 257px;
         margin-right: 85px;
+        @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+            }
         @media screen and (max-width: 992px) {
             margin-right: 0;
             margin-bottom: 30px;
@@ -709,7 +742,7 @@ section {
     height: fit-content;
     padding-right: 0;
     @media screen and (max-width: 768px) {
-        padding-right: 5%;
+        padding: 0;
     }
     .left-col {
         float: left;
@@ -723,6 +756,10 @@ section {
             font-size: 87.03px;
             line-height: 76px;
             margin-bottom: 20px;
+            @media screen and (max-width: 1200px) {
+                font-size: 65px;
+                line-height: 64px;
+            }
             @media screen and (max-width: 768px) {
                 font-size: 45px;
                 line-height: 30px;
@@ -738,6 +775,7 @@ section {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, auto);
                 gap: 20px;
+                padding-left: 5%;
             }
             h3 {
                 margin-top: 20px;
