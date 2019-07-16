@@ -586,6 +586,11 @@ footer {
     width: 400px;
     margin: 0 auto;
     float: none;
+    min-width: 320px;
+  }
+  #about .about-wrk-hours .wrk-hours .designer-name h3 {
+    font-size: 36px;
+    line-height: 36px;
   }
   #about .about-wrk-hours .designer-tag,
   #about .about-wrk-hours .designer-desc-container {
