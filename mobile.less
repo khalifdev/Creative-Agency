@@ -1,0 +1,48 @@
+@media screen and (max-width: 576px) {
+    header {
+        .logo {
+            width: 250px;
+        }
+        .welcome {
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .btn-container {
+                flex-flow: column;
+                align-items: center;
+                a {
+                    width: 80%;
+                    margin: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    #about {
+        padding: 0;
+        .about-text {
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            p {
+                column-count: 1;
+            }
+        }
+    }
+    #creative-team-members {
+        .members img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about {
+        .about-wrk-hours {
+            .wrk-hours {
+                width: 100%;
+            }
+        }
+    }
+}
