@@ -627,6 +627,9 @@ footer {
   }
 }
 @media screen and (max-width: 576px) {
+  body {
+    grid-template-rows: 897px minmax(794px, 1fr) 90px;
+  }
   .grid-template {
     grid-template-columns: repeat(1, 259px);
   }
