@@ -39,6 +39,7 @@ section {
 }
 
 .section-header {
+    margin-right: 30px;
     color: #454443;
     font-size: 87.03px;
     line-height: 76px;
@@ -53,7 +54,7 @@ section {
 
 .grid-template {
     width: 100%;
-    max-width: 827px;
+    // max-width: 827px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 259px);
     gap: 25px;
@@ -344,15 +345,20 @@ header {
 #work {
     padding: 0;
     .gallery-container {
+        // display: grid;
+        // width: 100%;
+        // grid-template-columns: repeat(auto-fit, 400.5px);
+        // grid-auto-rows: 264.5px;
+        // grid-auto-flow: dense;
+        // justify-content: center;
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(auto-fit, 400.5px);
+        grid-template-columns: repeat(4, minmax(248px,400.5px));
         grid-auto-rows: 264.5px;
-        grid-auto-flow: dense;
         justify-content: center;
-        @media screen and (max-width: 400.5px) {
-            grid-template-columns: repeat(auto-fit, 50%);
-        }
+        // @media screen and (max-width: 400.5px) {
+        //     grid-template-columns: repeat(auto-fit, 50%);
+        // }
     }
     .card {
         grid-row: auto / span 1;
@@ -502,6 +508,7 @@ footer {
     color: #666564;
     font-size: 16px;
     line-height: 24px;
+
 }
 
 @import "desktop.less";

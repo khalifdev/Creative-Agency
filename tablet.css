@@ -1,0 +1,56 @@
+@media screen and (max-width: 992px) {
+  .section-header {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  b {
+    white-space: pre;
+  }
+  .flex-template {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    text-align: center;
+  }
+  header .navbar {
+    justify-content: center;
+  }
+  header .welcome {
+    margin: 120px auto 0;
+  }
+  header .welcome p {
+    font-size: 20px;
+  }
+  header .welcome .btn-container {
+    justify-content: center;
+  }
+  header .welcome .btn-container a {
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  #work .gallery-container {
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(248px, 400.5px));
+  }
+  #find-us {
+    padding: 0;
+  }
+  #find-us .left-col {
+    width: 80%;
+  }
+  #find-us .left-col h2 {
+    text-align: center;
+  }
+  #find-us .left-col .contacts {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  #find-us .chair {
+    width: 100%;
+    height: 500px;
+    background-position: right;
+  }
+}

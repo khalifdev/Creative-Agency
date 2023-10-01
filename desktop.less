@@ -2,17 +2,21 @@
     body {
         width: 100%;
     }
-    section {
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+}
+
+@media screen and (max-width: 1500px) {
     header {
         padding: 57px 5% 0;
     }
     #about {
         padding: 0 5%;
     }
+    section {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
 }
 
 @media screen and (max-width: 1465px) {
@@ -22,6 +26,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .grid-template{
+        grid-template-columns: repeat(2, 259px);
+    }
     header .welcome h1 {
         font-size: 80px;
         line-height: 74px;
@@ -29,7 +36,7 @@
     .section-header {
         font-size: 65px;
         line-height: 64px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         width: auto;
     }
     #about {
@@ -49,4 +56,8 @@
             width: 100%;
         }
     }
+    #latest-design .latest-container .post-vertical {
+        display: none;
+    }
 }
+

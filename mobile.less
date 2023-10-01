@@ -1,4 +1,7 @@
 @media screen and (max-width: 576px) {
+    .grid-template{
+        grid-template-columns: repeat(1, 259px);
+    }
     header {
         .logo {
             width: 250px;
@@ -36,7 +39,12 @@
             margin-bottom: 20px;
         }
     }
+    footer {
+        height: 90px;
+        padding-top: 32px;
+    }
 }
+
 
 @media screen and (max-width: 400px) {
     #about {
@@ -45,5 +53,11 @@
                 width: 100%;
             }
         }
+    }
+    #work .gallery-container {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+    #work .card__content h2 {
+        margin-left: 20px;
     }
 }
